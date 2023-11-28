@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/site.css"/>
+    <script src="assets/js/main.js"></script>
+    <title>My Portfolio - Lim, Yang Tyin</title>
 </head>
 <body>
+    <header class="bg-purple-300 sticky top-0 flex flex-row items-start p-6 md:items-center">
+        <h1>Resume</h1>
+        <nav class="md:flex hidden md:ml-auto md:mr-0">
+            <ul class="flex flex-row gap-4">
+                <li><a href="index.html" class="hover:font-bold hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:font-bold hover:underline">About Me</a></li>
+                <li><a href="contact.html" class="hover:font-bold hover:underline">Contact</a></li>
+                <li><a href="resume.html" class="hover:font-bold hover:underline">Resume</a></li>
+                <li><a href="projects.html" class="hover:font-bold hover:underline">Projects</a></li>
+                <li><a href="mywork.html" class="hover:font-bold hover:underline">Sample Projects</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="flex flex-row items-start ml-auto mr-0 relative md:hidden">
+            <div id="dropdown-menu" class="hidden absolute right-10 top-0 shadow-lg bg-white w-32 border border-dotted">
+                <ul class="flex flex-col gap-2 p-2">
+                    <li><a href="index.html" class="hover:font-bold hover:underline">Home</a></li>
+                    <li><a href="about.html" class="hover:font-bold hover:underline">About Me</a></li>
+                    <li><a href="contact.html" class="hover:font-bold hover:underline">Contact</a></li>
+                    <li><a href="resume.html" class="hover:font-bold hover:underline">Resume</a></li>
+                    <li><a href="projects.html" class="hover:font-bold hover:underline">Projects</a></li>
+                    <li><a href="mywork.html" class="hover:font-bold hover:underline">Sample Projects</a></li>
+                </ul>
+            </div>
+            <button id="hamburger-menu" class="text-white focus:outline-none relative">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
 
+    <main class="grid grid-cols-2 mx-auto bg-green-500 items-center justify-center mt-auto mb-auto">
+        <img src="" alt="Your Image" class="mx-auto h-auto w-1/2 float-left mr-6 "/>
+        <div class="flex flex-col gap-4 text-3xl ">
+            <h1 class="font-serif font-semibold underline">Resume</h1>
+            <div class="h-screen overflow-y-auto">
+                <div class="max-w-screen-md w-full h-screen overflow-y-auto bg-white shadow-md p-6">
+                    <img src="assets/img/LIM%20YANG%20TYIN%20(Resume)_Page_1.png" alt="Image 1" class="w-full h-auto border border-black">
+                    <img src="assets/img/LIM%20YANG%20TYIN%20(Resume)_Page_2.png" alt="Image 2" class="w-full border border-black">
+                </div>
+            </div>
+            <a href="assets/downloads/LIM%20YANG%20TYIN%20(Resume).pdf" download="LIM YANG TYIN (Resume).pdf" class="hover:text-blue-700" >Download PDF</a>
+        </div>
+    </main>
+    <footer class="sticky bottom-0 mx-auto bg-yellow-300 flex flex-col gap-4 p-6 md:flex-row md:items-center">
+        <p>Copyright: 2023 Lim Yang Tyin. All rights reserved.</p>
+        <nav class="md:ml-auto">
+            <ul class="flex flex-col md:flex-row md:gap-4">
+                <li><a href="index.html" class="hover:font-bold hover:underline">Home</a></li>
+                <li><a href="about.html" class="hover:font-bold hover:underline">About Me</a></li>
+                <li><a href="contact.html" class="hover:font-bold hover:underline">Contact</a></li>
+                <li><a href="resume.html" class="hover:font-bold hover:underline">Resume</a></li>
+                <li><a href="projects.html" class="hover:font-bold hover:underline">Projects</a></li>
+                <li><a href="mywork.html" class="hover:font-bold hover:underline">Sample Projects</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
